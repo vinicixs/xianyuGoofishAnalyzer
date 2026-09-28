@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark light" />
+  <meta name="description" content="Política de Privacidade do Xianyu/Goofish Analyzer." />
+  <title>Política de Privacidade — Xianyu/Goofish Analyzer</title>
+  <style>
+    :root {
+      --bg: #0d1015;
+      --panel: #151a21;
+      --panel-2: #1b212a;
+      --text: #eef1f5;
+      --muted: #a9b0ba;
+      --line: #2a323d;
+      --accent: #ffd400;
+      --accent-text: #151515;
+      --max: 860px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top left, rgba(255, 212, 0, .08), transparent 32rem),
+        var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.68;
+    }
+    main {
+      width: min(calc(100% - 32px), var(--max));
+      margin: 48px auto;
+    }
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,.02), transparent 18rem), var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: clamp(24px, 5vw, 48px);
+      box-shadow: 0 22px 60px rgba(0,0,0,.28);
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 18px;
+      font-weight: 700;
+      letter-spacing: .01em;
+    }
+    .brand-mark {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 5px rgba(255,212,0,.10);
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 3.15rem);
+      line-height: 1.08;
+      letter-spacing: -.035em;
+    }
+    .updated {
+      margin: 14px 0 34px;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+    section {
+      padding: 25px 0;
+      border-top: 1px solid var(--line);
+    }
+    section:first-of-type { border-top: 0; }
+    h2 {
+      margin: 0 0 10px;
+      font-size: 1.12rem;
+      letter-spacing: -.01em;
+    }
+    p { margin: 0 0 12px; color: #d9dde3; }
+    p:last-child { margin-bottom: 0; }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: .92em;
+      background: var(--panel-2);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 2px 6px;
+    }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    .contact {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 14px;
+      margin-top: 4px;
+      border-radius: 10px;
+      background: var(--accent);
+      color: var(--accent-text);
+      text-decoration: none;
+      font-weight: 700;
+    }
+    footer {
+      margin-top: 22px;
+      color: var(--muted);
+      text-align: center;
+      font-size: .86rem;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f5f6f8;
+        --panel: #ffffff;
+        --panel-2: #f2f3f5;
+        --text: #17191d;
+        --muted: #666d78;
+        --line: #e1e4e8;
+      }
+      body { background: radial-gradient(circle at top left, rgba(255,212,0,.13), transparent 32rem), var(--bg); }
+      p { color: #343942; }
+      .card { box-shadow: 0 18px 45px rgba(0,0,0,.08); }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article class="card">
+      <div class="brand"><span class="brand-mark" aria-hidden="true"></span>Xianyu/Goofish Analyzer</div>
+      <h1>Política de Privacidade</h1>
+      <p class="updated">Última atualização: 27 de setembro de 2026</p>
+
+      <section>
+        <h2>1. Visão geral</h2>
+        <p>O Xianyu/Goofish Analyzer é uma extensão de navegador destinada a auxiliar a análise e organização de anúncios nas páginas suportadas do Xianyu/Goofish.</p>
+      </section>
+
+      <section>
+        <h2>2. Dados processados pela extensão</h2>
+        <p>Para oferecer suas funcionalidades, a extensão pode processar localmente informações visíveis nas páginas do Xianyu/Goofish, como título do anúncio, preço, descrição, dados públicos do vendedor e endereço da página.</p>
+        <p>A extensão também armazena localmente informações criadas ou escolhidas pelo usuário, incluindo configurações, favoritos, notas, histórico de preços observados, itens selecionados para comparação e caches necessários ao funcionamento das ferramentas.</p>
+      </section>
+
+      <section>
+        <h2>3. Armazenamento</h2>
+        <p>Esses dados são armazenados no navegador por meio de <code>chrome.storage.local</code>.</p>
+        <p>A extensão não possui, nesta versão, servidor próprio para sincronização desses dados e não envia favoritos, notas, histórico ou configurações ao desenvolvedor.</p>
+      </section>
+
+      <section>
+        <h2>4. Acesso aos sites</h2>
+        <p>A extensão executa somente nos domínios configurados do Xianyu/Goofish e utiliza o conteúdo das páginas para fornecer as funções descritas ao usuário.</p>
+        <p>Ela pode acessar páginas públicas/de vendedor do próprio Xianyu/Goofish para obter informações necessárias às funcionalidades de reputação e análise.</p>
+      </section>
+
+      <section>
+        <h2>5. Tradução</h2>
+        <p>Quando o usuário escolhe explicitamente abrir a função de tradução, a extensão pode abrir o Google Tradutor com o texto da descrição do anúncio inserido no endereço da página de tradução. Essa ação é iniciada pelo usuário e está sujeita às políticas do Google Tradutor.</p>
+      </section>
+
+      <section>
+        <h2>6. Compartilhamento e venda de dados</h2>
+        <p>O Xianyu/Goofish Analyzer não vende dados pessoais, não utiliza dados para publicidade personalizada e não transmite os dados armazenados localmente para serviços próprios do desenvolvedor.</p>
+      </section>
+
+      <section>
+        <h2>7. Backup e restauração</h2>
+        <p>A função de backup permite que o próprio usuário exporte seus dados da extensão para um arquivo JSON. A importação ocorre localmente quando o usuário seleciona esse arquivo.</p>
+        <p>O usuário é responsável por armazenar e proteger os arquivos de backup que exportar.</p>
+      </section>
+
+      <section>
+        <h2>8. Exclusão de dados</h2>
+        <p>Os dados locais podem ser removidos ao apagar os dados da extensão no navegador ou ao desinstalar a extensão. Dados antigos que tenham sido migrados do <code>localStorage</code> dos sites durante versões de teste podem continuar no armazenamento do próprio site até que sejam removidos pelo navegador ou pelo usuário.</p>
+      </section>
+
+      <section>
+        <h2>9. Alterações nesta política</h2>
+        <p>Esta política poderá ser atualizada caso novas funcionalidades alterem a forma como dados são processados, armazenados ou transmitidos.</p>
+      </section>
+
+      <section>
+        <h2>10. Contato</h2>
+        <p>Para dúvidas relacionadas à extensão ou a esta política de privacidade:</p>
+        <a class="contact" href="mailto:viniciusm771@gmail.com">viniciusm771@gmail.com</a>
+      </section>
+    </article>
+    <footer>Xianyu/Goofish Analyzer</footer>
+  </main>
+</body>
+</html>
